@@ -1,0 +1,30 @@
+# Xcode
+build/
+DerivedData/
+*.xcodeproj/xcuserdata/
+*.xcworkspace/xcuserdata/
+*.xcodeproj/project.xcworkspace/xcuserdata/
+
+# macOS
+.DS_Store
+*.swp
+*~
+
+# Build artifacts
+*.o
+*.a
+*.dylib
+*.app
+
+# Scratchpad
+scratchpad/
+
+# Python virtual environment
+.venv/
+
+# Serena
+.serena/
+
+# Claude
+claude.md
+.claude/

@@ -1,0 +1,406 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		A1000001228E8B7F00000001 /* XM4ControlApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1000002228E8B7F00000001 /* XM4ControlApp.swift */; };
+		A1000003228E8B7F00000002 /* MenuBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1000004228E8B7F00000002 /* MenuBarView.swift */; };
+		A1000005228E8B7F00000003 /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1000006228E8B7F00000003 /* SettingsView.swift */; };
+		A1000007228E8B7F00000004 /* SonyProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1000008228E8B7F00000004 /* SonyProtocol.swift */; };
+		A1000009228E8B7F00000005 /* HeadphoneState.swift in Sources */ = {isa = PBXBuildFile; fileRef = A100000A228E8B7F00000005 /* HeadphoneState.swift */; };
+		A100000B228E8B7F00000006 /* BluetoothManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = A100000C228E8B7F00000006 /* BluetoothManager.swift */; };
+		A100000D228E8B7F00000007 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A100000E228E8B7F00000007 /* Assets.xcassets */; };
+		A100000F228E8B7F00000008 /* IOBluetooth.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A1000010228E8B7F00000008 /* IOBluetooth.framework */; };
+		A1000060228E8B7F00000060 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1000061228E8B7F00000061 /* AppDelegate.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		A1000002228E8B7F00000001 /* XM4ControlApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XM4ControlApp.swift; sourceTree = "<group>"; };
+		A1000004228E8B7F00000002 /* MenuBarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuBarView.swift; sourceTree = "<group>"; };
+		A1000006228E8B7F00000003 /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
+		A1000008228E8B7F00000004 /* SonyProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SonyProtocol.swift; sourceTree = "<group>"; };
+		A100000A228E8B7F00000005 /* HeadphoneState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeadphoneState.swift; sourceTree = "<group>"; };
+		A100000C228E8B7F00000006 /* BluetoothManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BluetoothManager.swift; sourceTree = "<group>"; };
+		A100000E228E8B7F00000007 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		A1000010228E8B7F00000008 /* IOBluetooth.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = IOBluetooth.framework; path = System/Library/Frameworks/IOBluetooth.framework; sourceTree = SDKROOT; };
+		A1000011228E8B7F00000009 /* XM4Control.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = XM4Control.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		A1000012228E8B7F0000000A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A1000013228E8B7F0000000B /* XM4Control.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = XM4Control.entitlements; sourceTree = "<group>"; };
+		A1000061228E8B7F00000061 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		A100001E228E8B7F00000010 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A100000F228E8B7F00000008 /* IOBluetooth.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		A1000020228E8B7F00000011 /* XM4Control */ = {
+			isa = PBXGroup;
+			children = (
+				A1000002228E8B7F00000001 /* XM4ControlApp.swift */,
+				A1000061228E8B7F00000061 /* AppDelegate.swift */,
+				A1000021228E8B7F00000012 /* Models */,
+				A1000022228E8B7F00000013 /* Bluetooth */,
+				A1000023228E8B7F00000014 /* Views */,
+				A1000024228E8B7F00000015 /* Resources */,
+				A1000012228E8B7F0000000A /* Info.plist */,
+				A1000013228E8B7F0000000B /* XM4Control.entitlements */,
+			);
+			path = XM4Control;
+			sourceTree = "<group>";
+		};
+		A1000021228E8B7F00000012 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				A1000008228E8B7F00000004 /* SonyProtocol.swift */,
+				A100000A228E8B7F00000005 /* HeadphoneState.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		A1000022228E8B7F00000013 /* Bluetooth */ = {
+			isa = PBXGroup;
+			children = (
+				A100000C228E8B7F00000006 /* BluetoothManager.swift */,
+			);
+			path = Bluetooth;
+			sourceTree = "<group>";
+		};
+		A1000023228E8B7F00000014 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				A1000004228E8B7F00000002 /* MenuBarView.swift */,
+				A1000006228E8B7F00000003 /* SettingsView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		A1000024228E8B7F00000015 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				A100000E228E8B7F00000007 /* Assets.xcassets */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		A1000025228E8B7F00000016 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				A1000010228E8B7F00000008 /* IOBluetooth.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		A1000026228E8B7F00000017 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				A1000011228E8B7F00000009 /* XM4Control.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		A1000027228E8B7F00000018 = {
+			isa = PBXGroup;
+			children = (
+				A1000020228E8B7F00000011 /* XM4Control */,
+				A1000025228E8B7F00000016 /* Frameworks */,
+				A1000026228E8B7F00000017 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		A1000030228E8B7F00000020 /* XM4Control */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A1000031228E8B7F00000021 /* Build configuration list for PBXNativeTarget "XM4Control" */;
+			buildPhases = (
+				A100001D228E8B7F00000019 /* Sources */,
+				A100001E228E8B7F00000010 /* Frameworks */,
+				A100001F228E8B7F0000001A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = XM4Control;
+			productName = XM4Control;
+			productReference = A1000011228E8B7F00000009 /* XM4Control.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		A1000040228E8B7F00000030 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1500;
+				LastUpgradeCheck = 1500;
+				TargetAttributes = {
+					A1000030228E8B7F00000020 = {
+						CreatedOnToolsVersion = 15.0;
+					};
+				};
+			};
+			buildConfigurationList = A1000041228E8B7F00000031 /* Build configuration list for PBXProject "XM4Control" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = A1000027228E8B7F00000018;
+			productRefGroup = A1000026228E8B7F00000017 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				A1000030228E8B7F00000020 /* XM4Control */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		A100001F228E8B7F0000001A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A100000D228E8B7F00000007 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		A100001D228E8B7F00000019 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A1000001228E8B7F00000001 /* XM4ControlApp.swift in Sources */,
+				A1000060228E8B7F00000060 /* AppDelegate.swift in Sources */,
+				A1000003228E8B7F00000002 /* MenuBarView.swift in Sources */,
+				A1000005228E8B7F00000003 /* SettingsView.swift in Sources */,
+				A1000007228E8B7F00000004 /* SonyProtocol.swift in Sources */,
+				A1000009228E8B7F00000005 /* HeadphoneState.swift in Sources */,
+				A100000B228E8B7F00000006 /* BluetoothManager.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		A1000050228E8B7F00000040 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MACOSX_DEPLOYMENT_TARGET = 14.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		A1000051228E8B7F00000041 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MACOSX_DEPLOYMENT_TARGET = 14.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = macosx;
+				SWIFT_COMPILATION_MODE = wholemodule;
+			};
+			name = Release;
+		};
+		A1000052228E8B7F00000042 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = XM4Control/XM4Control.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "";
+				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = XM4Control/Info.plist;
+				INFOPLIST_KEY_LSUIElement = YES;
+				INFOPLIST_KEY_NSBluetoothAlwaysUsageDescription = "XM4Control needs Bluetooth access to control your Sony WH-1000XM4 headphones.";
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.xm4control.app;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_STRICT_CONCURRENCY = complete;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		A1000053228E8B7F00000043 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = XM4Control/XM4Control.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "";
+				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = XM4Control/Info.plist;
+				INFOPLIST_KEY_LSUIElement = YES;
+				INFOPLIST_KEY_NSBluetoothAlwaysUsageDescription = "XM4Control needs Bluetooth access to control your Sony WH-1000XM4 headphones.";
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.xm4control.app;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_STRICT_CONCURRENCY = complete;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		A1000031228E8B7F00000021 /* Build configuration list for PBXNativeTarget "XM4Control" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A1000052228E8B7F00000042 /* Debug */,
+				A1000053228E8B7F00000043 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A1000041228E8B7F00000031 /* Build configuration list for PBXProject "XM4Control" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A1000050228E8B7F00000040 /* Debug */,
+				A1000051228E8B7F00000041 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = A1000040228E8B7F00000030 /* Project object */;
+}
